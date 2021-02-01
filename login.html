@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>user login</title>
+</head>
+<body>
+	<div class="align">
+		<img class="logo" src="img/logo.svg">
+		<div class="card">
+			<div class="head">
+				<div></div>
+				<a id="login" class="selected" href="#login">Admin<span>Login</span></a>
+				<div></div>
+			</div>
+			<div class="tabs">
+				<form class="login shadow putih p-5" name="myForm" action="dashboard.html" onsubmit="return validateForm()" method="post">
+					<div class="inputs">
+						<div class="input">
+							<input class="form-control" placeholder="Username" type="text" id="username" name="username">
+							<img src="img/user.svg">
+						</div>
+						<div class="input">
+							<input type="password" class="form-control" id="inputPassword" placeholder="Password" name="pass">
+							<img src="img/pass.svg">
+						</div>
+						<label class="checkbox">
+							<input type="checkbox">
+							<span>Remember me</span>
+						</label>
+					</div>
+					<button type="submit" class="btn btn-primary" onclick="login()">Login</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="loginscript.js"></script>
+</body>
+</html>

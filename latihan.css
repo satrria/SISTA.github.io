@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border box;
+}
+.body {
+    background: #fefefe;
+    font-family: sans-serif;
+}
+.container {
+    max-width: 114rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+.nav-link:hover{
+    background-color: grey;
+}
+.display-4{
+    font-weight: bold;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.card-body-icon{
+    position: absolute;
+    z-index: 0;
+    top: 25px;
+    right: 4px;
+    opacity: 0.4;
+    font-size: 90px;
+    
+}

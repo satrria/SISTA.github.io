@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="profil.css">
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <title>Halaman Admin</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+      <a class="navbar-brand" href="#">SELAMAT DATANG ADMIN | <b>SISTA</b></a>
+        <form class="form-inline my-2 my-lg-0 ml-auto">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <div class="icon ml-4">
+          <h5>
+            <i class="far fa-envelope mr-3" data-toggle="tooltip" title="surat masuk"></i>
+            <i class="fas fa-bell mr-3" data-toggle="tooltip" title="notifikasi"></></i>
+            <i class="fas fa-sign-out-alt mr-3" data-toggle="tooltip" title="sign out"></></i>
+          </h5>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row no-gutters mt-5 bg-secondary">
+      <div class="col-md-2 bg-dark mt-2 pr-3 pt-4">
+        <ul class="nav flex-column ml-3 mb-5">
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="dashboard.html"><i class="fas fa-tachometer-alt mr-2"></i>Dashboard</a><hr class="bg-secondary">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="profil.html"><i class="far fa-user mr-2"></i>profil</a><hr class="bg-secondary">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="daftar.html"><i class="fas fa-clipboard mr-2"></i>Daftar Seminar</a><hr class="bg-secondary">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="seminar.html"><i class="fas fa-chalkboard-teacher mr-2"></i>Kelola Seminar</a><hr class="bg-secondary">
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-10 p-2 pt-3">
+        <h3><i class="fas fa-user mr-2 shadow-lg p-2 mb-2 bg-white rounded"></i>PROFIL</h3><hr>
+        <div class="row text-black">
+          <form class="col-md-10 p-4 needs-validation" novalidate>
+            <div class="mb-3 mr-2 pt-2">
+              <label for="validationCustom01" class="form-label">Nama Lengkap</label>
+              <input type="text" class="form-control" id="validationCustomUsername" placeholder="Masukan Nama" required>
+              <div class="valid-feedback">
+                Bagus!
+              </div>
+              <div class="invalid-feedback">
+                Masukan nama anda
+              </div>
+      
+            </div>
+            <div class="mb-3">
+              <label for="validationCustomEmail" class="form-label">Alamat E-mail</label>
+              <input type="email" class="form-control" id="validationCustomEmail" placeholder="Masukan E-mail" required>
+              <div class="valid-feedback">
+                Bagus!
+              </div>
+              <div class="invalid-feedback">
+                E-mail tidak terdeteksi
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="validationCustom01" class="form-label">NIM</label>
+              <input type="text" placeholder="Masukan NIM" class="form-control" id="validationCustom01" required>
+              <div class="valid-feedback">
+                Bagus!
+              </div>
+              <div class="invalid-feedback">
+                Masukan NIM terlebih dahulu
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="validationCustom02" class="form-label">Alamat</label>
+              <input type="text" placeholder="Masukan Alamat" class="form-control" id="validationCustom02" required>
+              <div class="valid-feedback">
+                Bagus!
+              </div>
+              <div class="invalid-feedback">
+                Masukan Alamat anda terlebih dahulu
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="validationCustomPassword" class="form-label">Password</label>
+              <input type="password" placeholder="Masukan Password" class="form-control" id="validationCustomPassword" required>
+              <div class="valid-feedback">
+                Bagus!
+              </div>
+              <div class="invalid-feedback">
+                Masukan password terlebih dahulu
+              </div>
+            </div>
+            <div class="mb-3 mr-2 form-check">
+              <input type="checkbox" class="form-check-input" id="validationCustomCheck" required>
+              <label class="form-check-label" for="validationCustomCheck">Check me out</label>
+              <div class="valid-feedback">
+                Terimakasih!
+              </div>
+              <div class="invalid-feedback"></div>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Admin.js"></script>
+    <script type="text/javascript" src="register.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
